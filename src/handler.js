@@ -7,9 +7,11 @@ const io = require('socket.io')(server);
  * to play one's own turn from a single device.
  * Any turn of any player can be played from any device.
  * 
+ *
  * Would help in sharing devices in cases players 
  * are more than 2.
  * 
+ *
  * Server emitted events:
  * 1. welcome (upon receiving `join` event)
  * 2. next_turn (upon receiving `turn_played` event)
@@ -19,6 +21,7 @@ const io = require('socket.io')(server);
  * 6. notify_loop (upon receiving `game_loop`)
  * 7. notify_undo (upon receiving `undo`)
  * 
+ *
  * Client emitted events:
  * 1. connection
  * 2. disconnect
